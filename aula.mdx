@@ -1,0 +1,110 @@
+# 1 - Dois modulos apontando para o App
+
+No arquivo principal, app_main() importar os modulos
+```c
+
+#include "moodulo-1.h"
+#include "moodulo-2.h"
+
+void app_main()
+{
+    // Inicializa o modulo 1
+    modulo_1_init();
+    // Inicializa o modulo 2
+    modulo_2_init();
+}
+
+```
+
+## MODULO-1.h
+
+```c
+#ifndef _MODULO_1_H_
+#define _MODULO_1_H_
+
+void modulo_1_init(char *v); //function prototype
+
+#endif
+
+```
+
+## MODULO-1.c
+
+```c
+// implentation of the function
+#include <stdio.h>
+#include "modulo-1.h"
+void modulo_1_init(char *v){
+    printf("Modulo 1: %s\n", v);
+}
+
+```
+
+# 2 - REFRENCIAR OS ARQUIVOS NO CMakeLists.txt
+
+```c
+idf_component_register(SRCS "main.c" "modulo-1.c" "modulo-2.c"
+                    INCLUDE_DIRS ".")
+```
+
+
+
+=================== AMBIENTE .CPP =====================
+
+1.1 RENOMEAR OS ARQUIVOS PARA .cpp
+1.2 EDITAR O ARQUIVO CMakeLists.txt para .cpp
+1.3 NO ARQUIVO PRINCIPAL, ADICIONAR 
+```c
+ extern "C" void app_main()
+```
+1.4 INCLUIR O MODULO NO ARQUIVO PRINCIPAL
+
+# Modulos-1 heders
+```c
+
+#ifndef _MODULO_1_H_
+#define _MODULO_1_H_
+
+ class MATEMATICA {
+    public:
+        int soma(int a, int b);
+        int subtracao(int a, int b);
+ }
+
+ extern MATEMATICA m;
+#endif
+```
+
+# Modulos-1.cpp
+```c
+#include "modulo-1.h"
+#include <stdio.h>
+
+int MATEMATICA::soma(int a, int b){
+    return a + b;
+}
+
+int MATEMATICA::subtracao(int a, int b){
+    return a - b;
+}
+
+MATERMATICA m; //instanciando a classe
+```
+
+=============== NO ARQUIVO PRINCIPAL ==================
+```c
+#include "modulo-1.h"
+#include <stdio.h>
+
+extern "C" void app_main() // obrigatorio para C++
+
+void app_main(){
+    MATEMATICA m = new MATEMATICA();// PODEMOS OMITIR
+
+    int result_1 = m.soma(2, 3);
+    int result_2 = m.subtracao(2, 3);
+    printf("Soma: %d\n", result_1);
+    printf("Subtracao: %d\n", result_2);
+}
+
+````

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/CMakeFiles/bootloader
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/CMakeFiles/bootloader.rule
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/CMakeFiles/bootloader-complete.rule
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/Johny/Desktop/SISTEMAS_EMBARCADOS/Mini_Sistema_de_Controle_por_Serial/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
